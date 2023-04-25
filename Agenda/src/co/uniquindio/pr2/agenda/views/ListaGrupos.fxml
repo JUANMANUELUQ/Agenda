@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.pr2.agenda.controllers.ListaGruposController">
+   <children>
+      <TableView fx:id="listaGrupos" layoutX="174.0" layoutY="60.0" prefHeight="430.0" prefWidth="600.0" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+        <columns>
+          <TableColumn fx:id="nombreColumna" prefWidth="226.0" text="Nombre" />
+          <TableColumn fx:id="categoriaColumna" prefWidth="170.0" text="Categoria" />
+            <TableColumn fx:id="contactosGuardadosColumna" prefWidth="203.0" text="Contactos guardados" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="283.0" layoutY="14.0" text="Grupos de la agenda" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="15.0" />
+      <HBox alignment="CENTER" layoutX="148.0" layoutY="510.0" spacing="20.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button layoutX="148.0" layoutY="510.0" mnemonicParsing="false" onAction="#eliminar" text="Eliminar" />
+            <Button layoutX="256.0" layoutY="510.0" mnemonicParsing="false" onAction="#verContactos" text="Ver contactos" />
+            <Button layoutX="413.0" layoutY="510.0" mnemonicParsing="false" onAction="#volver" text="Volver" />
+         </children>
+      </HBox>
+      <HBox layoutX="131.0" layoutY="555.0" spacing="20.0" style="-fx-alignment: center;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button layoutX="131.0" layoutY="555.0" mnemonicParsing="false" onAction="#agregarNuevoContacto" text="Agregar nuevo contacto" />
+            <Button layoutX="332.0" layoutY="555.0" mnemonicParsing="false" onAction="#agregarContactoExistente" text="Agregar contacto existente" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
